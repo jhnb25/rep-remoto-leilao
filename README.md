@@ -1,12 +1,20 @@
-Nome do projeto:Gerenciamento de Leilões
-O LeiloesTDSat é um programa de computador feito para ajudar a organizar leilões. Ele permite que você cadastre os produtos, veja uma lista de tudo o que está disponível e marque o que já foi vendido.
+# Gerenciamento de Leilões
 
-Como Funciona
-Cadastro: Você coloca os novos itens no sistema.
+## Descrição
+LeiloesTDS é um sistema desenvolvido para auxiliar na organização de leilões. O sistema permite cadastrar produtos, visualizar os itens disponíveis e atualizar o status de venda.
 
-Consulta: Todos os produtos aparecem em uma tabela para facilitar a visualização.
+## Funcionalidades
+Cadastro de produtos no sistema.  
+Listagem de produtos para consulta.  
+Atualização do status do produto para "Vendido".
 
-Vendas: Você consegue atualizar o status do item para "Vendido" assim que o leilão termina.
+## Tecnologias Utilizadas
+Java  
+MySQL  
+Java Swing  
+NetBeans  
 
-Tecnologia
-O sistema foi construído com a linguagem Java e usa o banco de dados MySQL para salvar as informações. O visual do programa (botões e janelas) foi feita com o Java Swing dentro da IDE NetBeans.
+## Banco de Dados
+O sistema utiliza MySQL para armazenamento de dados.  
+É necessário importar o script SQL fornecido para que o sistema funcione corretamente.
+
