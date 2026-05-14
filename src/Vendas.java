@@ -12,6 +12,12 @@ import javax.swing.DefaultListModel;
  * @author Doom
  */
 public class Vendas extends javax.swing.JFrame {
+   //variaveis
+    private ProdutosDAO dao2=new ProdutosDAO();    
+    private    ArrayList<ProdutosDTO> pd=  dao2.listarProdutosvendidos();
+  private  DefaultListModel<String> modelo = new DefaultListModel<>();
+
+
 
 
   
@@ -23,7 +29,14 @@ public class Vendas extends javax.swing.JFrame {
     public Vendas() {
         initComponents();
     
-        
+        jList1.setModel(modelo);
+        //construtor
+       for (ProdutosDTO p :pd){
+      String ab=  p.getNome();//esse como informação de status 
+     modelo.addElement("Nome do produto :"+ab);
+     
+     modelo.addElement("\n  Status : Vendido");
+        }
         
     }
 
