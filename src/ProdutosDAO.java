@@ -77,4 +77,38 @@ public class ProdutosDAO {
          return listagem;
     
     }
+    
+    
+    
+   // Operação de venderProduto() em ProdutosDAO 
+       //     – a função deve atualizar o status de um produto para “Vendido”.
+    public void venderProduto(int id){
+     conn = new conectaDAO().connectDB();
+    
+     String sql = "UPDATE  produtos  SET status='Vendido' WHERE id=?";
+     
+    try {
+    
+            prep = conn.prepareStatement(sql);
+    prep.setInt(1, id);
+       
+     
+
+          
+            prep.execute();
+            prep.close();
+            
+            JOptionPane.showMessageDialog(null, "Produto vendido  !");
+
+        } catch (SQLException erro) {
+            JOptionPane.showMessageDialog(null, "Erro ao vender: " + erro.getMessage());
+        }
+     
+     
+    }
+    
+    
+    
+    
+    
 }
